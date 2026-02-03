@@ -14,7 +14,7 @@ const Index = () => {
   return (
     <div className="min-h-screen flex items-center justify-center p-4 md:p-8 relative overflow-hidden bg-gradient-to-b from-sky-light via-background to-sky-light">
       <FloatingPetals />
-      
+
       {/* Decorative corners */}
       <div className="fixed top-0 left-0 w-32 h-32 md:w-48 md:h-48 bg-gradient-to-br from-sky/30 to-transparent rounded-br-full" />
       <div className="fixed top-0 right-0 w-32 h-32 md:w-48 md:h-48 bg-gradient-to-bl from-sky/30 to-transparent rounded-bl-full" />
@@ -36,15 +36,15 @@ const Index = () => {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 0.5, duration: 0.8 }}
           />
-          <motion.h1 
-            className="text-4xl md:text-5xl text-navy font-elegant text-center tracking-widest uppercase mb-2"
+          <motion.h1
+            className="text-4xl md:text-6xl text-navy font-script text-center mb-2"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.8 }}
           >
             Invitación XV Años
           </motion.h1>
-          <motion.div 
+          <motion.div
             className="w-24 h-0.5 bg-gold/50 rounded-full"
             initial={{ scaleX: 0 }}
             animate={{ scaleX: 1 }}
@@ -60,7 +60,7 @@ const Index = () => {
           onClick={handleClick}
         >
           <Sparkles />
-          
+
           {/* Inner content */}
           <div className="relative bg-card rounded-xl overflow-hidden">
             {/* Image */}
@@ -111,7 +111,7 @@ const Index = () => {
       {/* Floating decorative elements */}
       <motion.div
         className="fixed top-1/4 left-8 text-4xl opacity-20"
-        animate={{ 
+        animate={{
           y: [0, -15, 0],
           rotate: [0, 10, 0]
         }}
@@ -121,7 +121,7 @@ const Index = () => {
       </motion.div>
       <motion.div
         className="fixed top-1/3 right-8 text-3xl opacity-20"
-        animate={{ 
+        animate={{
           y: [0, -20, 0],
           rotate: [0, -10, 0]
         }}
@@ -131,7 +131,7 @@ const Index = () => {
       </motion.div>
       <motion.div
         className="fixed bottom-1/4 left-12 text-3xl opacity-20"
-        animate={{ 
+        animate={{
           y: [0, -12, 0],
           rotate: [0, 15, 0]
         }}
@@ -141,7 +141,7 @@ const Index = () => {
       </motion.div>
       <motion.div
         className="fixed bottom-1/3 right-12 text-4xl opacity-20"
-        animate={{ 
+        animate={{
           y: [0, -18, 0],
           rotate: [0, -8, 0]
         }}
