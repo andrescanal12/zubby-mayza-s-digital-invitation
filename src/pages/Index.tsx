@@ -27,6 +27,31 @@ const Index = () => {
         transition={{ duration: 1, ease: "easeOut" }}
         className="relative z-10 max-w-2xl w-full"
       >
+        <div className="flex flex-col items-center mb-8">
+          <motion.img
+            src="/crown.png"
+            alt="Corona"
+            className="w-24 h-auto mb-4 drop-shadow-lg"
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ delay: 0.5, duration: 0.8 }}
+          />
+          <motion.h1 
+            className="text-4xl md:text-5xl text-navy font-elegant text-center tracking-widest uppercase mb-2"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.8 }}
+          >
+            Invitación XV Años
+          </motion.h1>
+          <motion.div 
+            className="w-24 h-0.5 bg-gold/50 rounded-full"
+            initial={{ scaleX: 0 }}
+            animate={{ scaleX: 1 }}
+            transition={{ delay: 1.2, duration: 1 }}
+          />
+        </div>
+
         {/* Main card container */}
         <motion.div
           className="invitation-card gold-border p-2 md:p-3 cursor-pointer group"
