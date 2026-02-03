@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import FloatingPetals from "@/components/FloatingPetals";
 import Sparkles from "@/components/Sparkles";
-import invitationImage from "@/assets/invitation-zubby.jpeg";
+import invitationImage from "@/assets/invitation-zubby.png";
 
 const Index = () => {
   const handleClick = () => {
